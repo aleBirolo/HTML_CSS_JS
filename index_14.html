@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 14</title>
+
+    <!-- Fuenta extener https://fonts.google.com/ -->
+    <link rel="stylesheet"  href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap">
+
+    <!-- Mi hoja de estilos (Siempre la mas relevante) -->
+    <link rel="stylesheet" href="estilos14.css">
+</head>
+<body>
+    <header class="header container">
+        <h1 class="title"> Ejercicio 14 </h1>
+    </header>
+    <section id="main_section">
+        <div id="formulario" class="section">
+            <form
+                action=""
+                method="POST"
+                class="form_registro"
+                id="form_registro"
+                enctype="multipart/form-data"
+            >
+                <div class="form_group">
+                    <label for="isbn">ISBN*</label>
+                    <input type="text" name="isbn" id="isbn" class="input input-text" required placeholder="x-xxxx-xxxx-x">
+                </div>
+                <div class="form_group">
+                    <label for="titulo">Titulo*</label>
+                    <input type="text" name="titulo" id="titulo" class="input"  placeholder="Titulo de Libro">
+                </div>
+                <div class="form_group">
+                    <label for="autor">Autor*</label>
+                    <input type="text" name="autor" id="autor" class="input" placeholder="Nombre del autor">
+                </div>
+                <div class="form_group">
+                    <label for="nroPag">Numero de Paginas*</label>
+                    <input type="number" name="nroPag" id="nroPag" class="input" placeholder="1234">
+                    </select>
+                </div>
+                <button type="submit" class="link btn" onclick="iniciar()"> Registrar</button>
+            </form>
+        </div>
+        <img src="" alt="">
+    </section> 
+    <footer>
+        <button onclick="location.href = 'index.html';" id="btnHome" class="btnHome" >Home</button>
+    </footer>
+    <!-- El enlace hacia los scrips suele ir aqui antes del cierre del body-->
+    
+    <script type="text/javascript" language="javascript" src="ej14.js"></script> 
+</body>
+</html>
