@@ -4,7 +4,8 @@
         <title>Ejercicio 23</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="estilos23.css">
+        
     </head>
     <body>
         <header>
@@ -16,13 +17,20 @@
                     Resalte todas las palabras de más de 8 caracteres en el texto del párrafo (con un fondo
                     amarillo, por ejemplo)
                 </h3>
-                <!-- Foto -->
+            </div>
+            <div>
+                <h3>Imagen de Prueba</h3>
+                <img src="imagenDeMuestra.png" alt="">
+            </div>
+            <div>
+                <span id="textoLorem"></span>
             </div>
         </section>
     </body>
     <footer>
         <script type="text/javascript" language="javascript" src="ej23.js"></script> 
-        <button onclick="iniciar()" id="btnHome" class="btnEjecutar" >Ejecutar</button>
+        <button onclick="iniciar(1)"  id="btnEjecutar" class="btnEjecutar" >Ejecutar</button>
         <button onclick="location.href = 'index.html';" id="btnHome" class="btnHome" >Home</button>
+        <script>iniciar(0)</script>
     </footer>
 </html>

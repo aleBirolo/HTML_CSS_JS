@@ -1,27 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Ejercicio 21</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <header>
-            <h1 id="Titulo">Ejercicio 21</h1>
-        </header>
-        <section id="main_section">
-            <div id="enunciado" class="section" >
-                <h3>
-                    Escribir un programa para obtener un array de las propiedades de un objeto Persona.
-                    Las propiedades son nombre, edad, sexo ('H' hombre, 'M' mujer, 'O' otro), peso y altura.
-                </h3>
-            </div>
-        </section>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 21</title>
+
+    <!-- Fuenta extener https://fonts.google.com/ -->
+    <link rel="stylesheet"  href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap">
+
+    <!-- Mi hoja de estilos (Siempre la mas relevante) -->
+    <link rel="stylesheet" href="estilos21.css">
+</head>
+<body>
+    <header class="header container">
+        <h1 class="title"> Ejercicio 21 </h1>
+    </header>
+    <section id="main_section">
+        <div>
+            <header>
+                Escribir un programa para obtener un array de las propiedades de un objeto Persona.
+                Las propiedades son nombre, edad, sexo ('H' hombre, 'M' mujer, 'O' otro), peso y altura.
+            </header>
+        </div>
+        <div id="formulario" class="section">
+            <form
+                action=""
+                method="POST"
+                class="form_registro"
+                id="form_registro"
+                enctype="multipart/form-data"
+            >
+                <div class="form_group">
+                    <label for="nombre">Nombre*</label>
+                    <input type="text" name="nombre" id="nombre" class="input input-text"  placeholder="Nombre">
+                </div>
+                <div class="form_group">
+                    <label for="edad">Edad*</label>
+                    <input type="number" name="edad" id="edad" class="edad"  placeholder="25">
+                </div>
+                <div class="form_group"> 
+                    <div>
+                        <label for="sexo">Sexo*</label>
+                        <a for="femenino">Femenino</a>
+                        <input type="radio"  name="sexo" id="sexo" value="f" checked />
+                        <a for="masculino">Masculino</a>
+                        <input type="radio" name="sexo" id="sexo" value="m" />
+                        <a for="other">Otro</a>
+                        <input type="radio" name="sexo" id="sexo" value="o" />
+                    </div> 
+                </div> 
+                <div class="form_group">
+                    <label for="peso">Peso(Kg)*</label>
+                    <input type="number" name="peso" id="peso" class="input"  placeholder="70">
+                    </select>
+                </div>
+                <div class="form_group">
+                    <label for="altura">Altura(Cm)*</label>
+                    <input type="number" name="altura" id="altura" class="input"  placeholder="170">
+                    </select>
+                </div>
+                <button type="submit" class="link btn" onclick="iniciar(0)"> Registrar</button>
+            </form>
+        </div>
+        <img src="" alt="">
+    </section> 
     <footer>
         <script type="text/javascript" language="javascript" src="ej21.js"></script> 
-        <button onclick="iniciar()" id="btnHome" class="btnEjecutar" >Ejecutar</button>
         <button onclick="location.href = 'index.html';" id="btnHome" class="btnHome" >Home</button>
     </footer>
+</body>
 </html>

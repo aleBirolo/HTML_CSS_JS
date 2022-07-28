@@ -1,15 +1,3 @@
-//function iniciar(){
-
-// JSON Persona
-/*
-var persona = {
-    nombre : "miNombre",
-    edad : 12345678,
-    sexo: 'M',
-    peso: '70',
-    altura: '1.70',
-};
-*/
 class Persona{
     nombre;
     edad;
@@ -20,20 +8,41 @@ class Persona{
     constructor( nombre, edad, sexo, peso, altura){
         this.nombre = nombre;
         this.edad = edad;
+        this.sexo= sexo;
         this.peso = peso;
-        this.sexo=sexo;
         this.altura=altura;
     }
 
+    getNombre(){return this.nombre;}
+    getEdad(){return this.edad;}
+    getSexo(){return this.sexo;}
+    getPeso(){return this.peso;}
+    getAltura(){return this.altura;}
+    
     to_string() {
-        var msj = `Nombre= ${this.nombre} \nEdad= ${this.edad}\nSexo= ${this.sexo}\nPeso= ${this.peso}\nAltura= ${this.altura.toFixed(2)}`;
+        var msj = `Nombre= ${this.nombre} \nEdad= ${this.edad}\nSexo= ${this.sexo}\nPeso= ${this.peso}\nAltura= ${this.altura}`;
         return msj;
     }
 }
 
-function iniciar(){
-    var p1 = new Persona("miNombre", 25, "M", 80,1.80);
 
-    alert(p1.to_string());
+function iniciar(  num ){
+   var msj = '';
+    var p1 = new Persona( document.getElementById('nombre').value,
+                        document.getElementById('edad').value,
+                        document.getElementById('sexo').value,
+                        document.getElementById('peso').value,
+                        document.getElementById('altura').value
+                      );
+    var perVec = [];
+
+    perVec.push(p1.getNombre());
+    perVec.push(p1.getEdad());
+    perVec.push(p1.getSexo());
+    perVec.push(p1.getPeso());
+    perVec.push(p1.getAltura());
+
+    alert(perVec);
+    
 }
-//}
+
